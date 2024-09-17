@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+
+body {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+    background-color: #1c2331; /* Dark mode background color */
+    color: #e0e0e0; /* Dark mode text color */
+}
+
+body.light-mode {
+    background-color: #ffffff; /* Light mode background color */
+    color: #000000; /* Light mode text color */
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #242c40;
+}
+
+body.light-mode .header {
+    background-color: #ffffff; /* Header background in light mode */
+    color: #000000; /* Header text color in light mode */
+}
+
+.logo h1 {
+    font-size: 1.5rem;
+    color: #00ffcc;
+}
+
+.currency-select {
+    display: flex;
+    align-items: center;
+}
+
+.currency-select .dropdown {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.currency-select .buy-btn {
+    background-color: #00ffcc;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.connect {
+    display: flex;
+    align-items: center;
+}
+
+.connect .counter {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #2e3951;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.connect .counter span {
+    font-size: 1.2rem;
+    color: #00ffcc;
+}
+
+.connect .connect-btn {
+    background-color: #00ffcc;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.connect .connect-btn .telegram-icon {
+    margin-right: 5px;
+}
+
+#theme-toggle {
+    display: none;
+}
+
+.toggle-label {
+    width: 50px;
+    height: 25px;
+    background-color: #333;
+    border-radius: 25px;
+    position: relative;
+    cursor: pointer;
+}
+
+body.light-mode .toggle-label {
+    background-color: #e0e0e0;
+}
+
+.toggle-label::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: #00ffcc;
+    border-radius: 50%;
+    position: absolute;
+    top: 2.5px;
+    left: 5px;
+    transition: left 0.3s;
+}
+
+#theme-toggle:checked + .toggle-label::before {
+    left: 25px;
+}
+
+.price-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    background-color: #1c2331;
+}
+
+body.light-mode .price-section {
+    background-color: #ffffff; /* Light mode background color for the price section */
+}
+
+.price-stats {
+    display: flex;
+}
+
+.stat {
+    text-align: center;
+    margin: 0 20px;
+}
+
+.stat .percentage {
+    font-size: 1.5rem;
+    color: #00ffcc;
+    margin-bottom: 5px;
+}
+
+body.light-mode .stat .percentage {
+    color: #000000; /* Light mode percentage text color */
+}
+
+.stat .time-frame {
+    font-size: 1rem;
+    color: #b0b0b0;
+}
+
+.best-price {
+    text-align: center;
+    color: #e0e0e0;
+}
+
+body.light-mode .best-price {
+    color: #000000; /* Best price text color in light mode */
+}
+
+.best-price .label {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.best-price .price {
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+body.light-mode .best-price .price {
+    color: #000; /* Price text color in light mode */
+}
+
+.best-price .sub-text {
+    font-size: 0.9rem;
+    color: #b0b0b0;
+}
+
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}

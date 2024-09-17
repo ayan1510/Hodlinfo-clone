@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hodlinfo Clone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div>
+        <header class="header">
+            <div class="logo">
+                <h1>HODLINFO</h1>
+            </div>
+            <div class="currency-select">
+                <button class="dropdown">INR <span>▼</span></button>
+                <button class="dropdown">BTC <span>▼</span></button>
+                <button class="buy-btn">BUY BTC</button>
+            </div>
+            <div class="connect">
+                <div class="counter">
+                    <span>43</span>
+                </div>
+                <button class="connect-btn">
+                    <i class="telegram-icon">✈️</i> Connect Telegram
+                </button>
+                <input type="checkbox" id="theme-toggle">
+                <label for="theme-toggle" class="toggle-label"></label>
+            </div>
+        </header>
+          
+
+
+    </div>
+
+    <section class="price-section">
+        <div class="price-stats">
+            <div class="stat">
+                <p class="percentage">0.1 %</p>
+                <p class="time-frame">5 Mins</p>
+            </div>
+            <div class="stat">
+                <p class="percentage">0.96 %</p>
+                <p class="time-frame">1 Hour</p>
+            </div>
+        </div>
+    
+        <div class="best-price">
+            <p class="label">Best Price to Trade</p>
+            <h2 class="price">₹ 56,56,600</h2>
+            <p class="sub-text">Average BTC/INR net price including commission</p>
+        </div>
+    
+        <div class="price-stats">
+            <div class="stat">
+                <p class="percentage">2.73 %</p>
+                <p class="time-frame">1 Day</p>
+            </div>
+            <div class="stat">
+                <p class="percentage">7.51 %</p>
+                <p class="time-frame">7 Days</p>
+            </div>
+        </div>
+    </section>
+    
+
+
+    <h1 style="text-align: center;">Best Price to Trade</h1>
+    <table id="crypto-table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Last</th>
+                <th>Buy</th>
+                <th>Sell</th>
+                <th>Volume</th>
+                <th>Base Unit</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Data will be inserted here -->
+        </tbody>
+    </table>
+
+    <script src="app.js"></script>
+</body>
+</html>
